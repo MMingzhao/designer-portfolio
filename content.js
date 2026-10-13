@@ -2,6 +2,8 @@
 window.PORTFOLIO = {
   profile: {
     name: 'VISUAL DESIGNER',
+    heroLine1: 'FORM',
+    heroLine2: 'feeling.',
     chineseName: '视觉设计师',
     role: 'GRAPHIC DESIGN · VISUAL COMMUNICATION',
     title: '用设计，\n让想法发生。',
@@ -40,7 +42,7 @@ window.PORTFOLIO = {
   projects: [
     {
       id: 'off-grid', number: '01', title: 'OFF / GRID', subtitle: '不被边界定义', category: 'graphic', discipline: '品牌视觉 · 平面设计', english: 'Visual Identity',
-      image: 'assets/off-grid.svg', imageAlt: '橙红、炭黑与酸橙绿构成的 OFF GRID 品牌海报及卡片组合', color: '#f04428', background: '#d9d4c5',
+      image: 'assets/off-grid-wide.svg', imageAlt: '橙红、炭黑与酸橙绿构成的 OFF GRID 品牌海报及卡片组合', color: '#f04428', background: '#d9d4c5',
       summary: '让边界成为创造的起点。以开放、直接的图形语言，为独立精神建立一套鲜明的视觉识别。',
       approach: '从网格出发，再适度打破网格。粗粝的大字、具有张力的星形与高对比色块，共同形成自由而统一的视觉节奏。',
       scope: ['视觉识别', '标志与图形系统', '版式设计', '印刷延展'],
@@ -67,7 +69,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'field', number: '04', title: 'FIELD', subtitle: '为日常，留一点呼吸', category: 'ui', discipline: '数字产品 · UI 设计', english: 'Digital Experience',
-      image: 'assets/field.svg', imageAlt: '鼠尾草绿的专注生活应用界面，包含冥想卡片、每周统计和日记模块', color: '#466e52', background: '#d3dcc9',
+      image: 'assets/field-wide.svg', imageAlt: '鼠尾草绿的专注生活应用界面，包含冥想卡片、每周统计和日记模块', color: '#466e52', background: '#d3dcc9',
       summary: '一个平静、轻量的数字空间。以清晰的信息架构与自然的视觉语言，让专注与日常记录变得更容易。',
       approach: '以内容优先的卡片布局组织主界面，将主要行动放在自然视线内。柔和的植物色系、宽松的间距与简洁的反馈共同降低认知负担。',
       scope: ['产品视觉方向', '界面设计', '组件系统', '交互层级'],

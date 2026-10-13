@@ -1,19 +1,19 @@
-# Visual Designer / 视觉设计作品集
+# Form & Feeling / 视觉设计作品集 — V2
 
-一个无需构建、无运行时依赖的中英双语视觉设计作品集。适配桌面和移动端，可直接发布到 GitHub Pages。
+一个无需构建、无运行时依赖的中英双语视觉设计作品集。V2 采用展览式艺术指导：超大比例字形、原创三维雕塑、错落的项目画幅、黑白朱红的强烈节奏。适配桌面和移动端，直接发布到 GitHub Pages。
 
 ## 内容维护
 
 所有项目、个人介绍、履历、客户和奖项集中在 `content.js`：
 
-- `profile`：称呼、首页文案、个人介绍、邮箱、简历链接、社交链接。
+- `profile`：称呼、首页 `heroLine1` / `heroLine2`、个人介绍、邮箱、简历链接、社交链接。
 - `projects`：作品名称、分类、说明、封面、配色和项目细节。
 - `experience`：工作经历时间线。
 - `awards`：奖项与认可。
 - `clients`：合作品牌字标。
 - `categories`：作品筛选分类。
 
-图片放在 `assets/`，修改对应项目的 `image` 和 `imageAlt` 即可。推荐封面宽高比为 5:4。联系方式与简历链接只有填写后才会显示，不使用虚假邮箱或无效下载按钮。
+图片放在 `assets/`，修改对应项目的 `image` 和 `imageAlt` 即可。普通封面推荐宽高比为 5:4；首个品牌项目与数字产品项目使用约 1.7:1 的横向大画幅。联系方式与简历链接只有填写后才会显示，不使用虚假邮箱或无效下载按钮。
 
 ### 内容真实性说明
 
@@ -31,6 +31,8 @@
 - `app.js`：项目分类、项目弹窗、历史记录、移动导航。
 - `assets/`：本地 SVG/JPG 素材与来源审计。
 - `scripts/generate_artwork.py`：原创 SVG 作品的生成源文件。
+- `scripts/generate_spreads.py`：V2 品牌与数字产品横向视觉的生成源文件。
+- `scripts/generate_sculpture.py`：原创三维结形雕塑的参数化几何与灯光算法，输出 SVG；发布使用其优化的透明 WebP 渲染版 `assets/sculpture.webp`。
 - `scripts/test-site.cjs`：可选浏览器检查脚本；生产网站不依赖 Node.js。
 
 ## 本地预览
@@ -56,23 +58,23 @@ Repository → Settings → Pages → Deploy from a branch → `main` / `(root)`
 - `#project/mimo` 等锚点深链接，可使用浏览器前进/后退。
 - 移动导航支持菜单关闭、Escape 与页面跳转。
 - 全部作品图像有文字说明；装饰元素不重复播报。
-- 遵循 `prefers-reduced-motion`，减少动态效果时停止滚动横幅和旋转图形。
+- 遵循 `prefers-reduced-motion`，减少动态效果时停止雕塑浮动、循环图形和滚动入场效果。
 - 不设置跟踪器、Cookie、分析服务、外部字体或广告。
 
 ## 公开艺术素材来源与许可
 
-生产页面仅使用下面两幅历史作品作为“视觉札记”和编辑性配图。它们不是本作品集设计师的原创项目，不代表与博物馆的合作或背书。所有图像本地保存，没有运行时热链。
+V2 生产页面仅展示本次制作的原创视觉。以下两幅历史艺术作品曾用于 V1 的编辑性配图，仍保留于仓库以完整记录原始资源；V2 页面不再引用它们。它们不是本作品集设计师的原创项目，不代表与博物馆的合作或背书。所有图像本地保存，没有运行时热链。
 
 1. `assets/visual-notes-wendingen.jpg`
    - El Lissitzky, *Wendingen*, 1921（1923 年出版）
    - 馆藏页：https://www.nga.gov/artworks/93943-wendingen
    - 图像：https://api.nga.gov/iiif/f5b758cb-7d21-4327-bc2f-f869b7317731/full/full/0/default.jpg
-   - 使用：关于区域的编辑性图形配图。
+   - V1 使用：关于区域的编辑性图形配图。V2 未引用。
 2. `assets/visual-notes-nightingales.jpg`
    - Paul Klee, *Persische Nachtigallen (Persian Nightingales)*, 1917
    - 馆藏页：https://www.nga.gov/artworks/71551-persische-nachtigallen-persian-nightingales
    - 图像：https://api.nga.gov/iiif/e3c67705-58e9-494e-a57e-d1ad8640abb1/full/full/0/default.jpg
-   - 使用：履历区域的编辑性艺术配图。
+   - V1 使用：履历区域的编辑性艺术配图。V2 未引用。
 
 许可核验日期：2026-10-13。美国国家美术馆对应馆藏页面明确将这些媒体标记为可免费使用的公有领域资源。机构 Open Access 政策以 CC0 1.0 释出这些图像，可用于商业及非商业用途；署名为建议的礼貌性署名，不是许可要求。
 
