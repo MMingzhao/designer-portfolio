@@ -68,6 +68,15 @@
   });
   $('.dialog-close').addEventListener('click', () => closeProject());
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeProject(); });
+  dialog.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const focusable = [...dialog.querySelectorAll('button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex="0"]')].filter(element => element.getClientRects().length > 0);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (!first) { event.preventDefault(); return; }
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === dialog)) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
   dialog.addEventListener('click', event => {
     const next = event.target.closest('[data-next-project]');
     if (next) {
