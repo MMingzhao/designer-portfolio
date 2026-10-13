@@ -1,0 +1,29 @@
+{
+  "verifiedOn": "2026-10-13",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "institutionPolicy": "https://www.nga.gov/terms-and-notices",
+  "licenseBasis": "Each linked NGA artwork page explicitly marks its media free and in the public domain. NGA's Open Access policy releases these images under CC0 for commercial and non-commercial use. Courtesy credit is encouraged, not required. Do not imply NGA endorsement or designer authorship of the underlying historical artworks.",
+  "assets": [
+    {
+      "filename": "visual-notes-wendingen.jpg",
+      "title": "Wendingen",
+      "artist": "El Lissitzky",
+      "date": "1921 (published 1923)",
+      "sourceUrl": "https://www.nga.gov/artworks/93943-wendingen",
+      "imageUrl": "https://api.nga.gov/iiif/f5b758cb-7d21-4327-bc2f-f869b7317731/full/full/0/default.jpg",
+      "accessionNumber": "1995.77.4",
+      "visualFit": "Cream, black, vermilion; typographic and geometric magazine cover. Primary recommendation."
+    },
+    {
+      "filename": "visual-notes-nightingales.jpg",
+      "title": "Persische Nachtigallen (Persian Nightingales)",
+      "artist": "Paul Klee",
+      "date": "1917",
+      "sourceUrl": "https://www.nga.gov/artworks/71551-persische-nachtigallen-persian-nightingales",
+      "imageUrl": "https://api.nga.gov/iiif/e3c67705-58e9-494e-a57e-d1ad8640abb1/full/full/0/default.jpg",
+      "accessionNumber": "1990.59.2",
+      "visualFit": "Cream, cobalt, citrus, pink; geometric watercolor with letterforms and birds."
+    }
+  ]
+}
