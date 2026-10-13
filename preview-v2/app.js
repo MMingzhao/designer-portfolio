@@ -122,7 +122,7 @@
     if (image.complete && !image.naturalWidth) image.classList.add('is-failed');
   });
   $('#experience-list').innerHTML = (content.experience || []).map(item => `<article class="experience-item"><p class="experience-period">${escapeHTML(item.period)}</p><h4>${escapeHTML(item.role)}</h4><p class="experience-company">${escapeHTML(item.company)}</p><p class="experience-description">${escapeHTML(item.description)}</p></article>`).join('');
-  $('#awards-list').innerHTML = (content.awards || []).map(item => `<article class="award-item"><span class="award-year">${escapeHTML(item.year)}</span><div><h4>${escapeHTML(item.name)}</h4><p>${escapeHTML(item.detail)}</p><small>${escapeHTML(item.project)}</small></div><span class="award-star" aria-hidden="true">✳︎</span></article>`).join('');
+  $('#awards-list').innerHTML = (content.awards || []).map(item => `<article class="award-item"><span class="award-year">${escapeHTML(item.year)}</span><div><h4>${escapeHTML(item.name)}</h4><p>${escapeHTML(item.detail)}</p><small>${escapeHTML(item.project)}</small></div><span class="award-star" aria-hidden="true"><svg class="star-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 7v86M7 50h86M20 20l60 60M20 80l60-60" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span></article>`).join('');
   $('#client-list').innerHTML = (content.clients || []).map(item => `<div class="client-wordmark ${escapeHTML(item.style)}"><strong>${escapeHTML(item.name)}</strong><span>${escapeHTML(item.english)}</span></div>`).join('');
   renderProjects();
   syncHash();
